@@ -1,10 +1,8 @@
 "use client";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
-import { TbBrandGithub } from "react-icons/tb";
+import { TbBackground, TbBrandGithub } from "react-icons/tb";
 import { LuSunMedium } from "react-icons/lu";
-import { MdVerifiedUser } from "react-icons/md";
-import { FiAlignJustify } from "react-icons/fi";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -56,23 +54,30 @@ export default function Home() {
       </header>
 
       <main className="hero">
+        <div className="illumination"></div>
         <div className="bar">
-          <Link href="#">New</Link>
+          <Link href="#" className="init">
+            New
+          </Link>
           <Link href="#">Design is out now!</Link>
         </div>
-        <h1>
-          {" "}
-          <span>Experience</span> the shadcn landing page{" "}
-        </h1>
-        <p>
-          We're more than just a tool, we're a community of passionate creator.
-          Get, access to exclusive resources, tutorials, and support.
-        </p>
-        <div className="github">
-          <button>
+
+        <section className="texts">
+          <h1>Experience</h1>
+          <h1>
+            The <span>Shadcn</span> landing page
+          </h1>
+
+          <p>
+            We're more than just a tool, we're a community of passionate
+            creators. Get access to exclusive resrouces, tutorials, and support.
+          </p>
+        </section>
+        <div className="github_conteiner">
+          <button className="github">
             get started <FaArrowRightLong />
           </button>
-          <button>github respository</button>
+          <button className="respository">github respository</button>
         </div>
       </main>
     </>
