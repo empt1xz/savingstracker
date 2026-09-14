@@ -103,3 +103,31 @@ nav > a {
     display: none;
   }
 }
+/* link */
+.bar {
+  border: solid 2px #141414;
+  padding: 7px;
+  border-radius: 4rem;
+  display: flex;
+  gap: 8px;
+}
+.bar a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+  padding: 2px;
+}
+.bar a:hover {
+  background-color: orange;
+  border-radius: 4rem;
+}
+.github {
+  display: flex;
+  gap: 10px;
+}
+.github button {
+  background: orange;
+  border: orange;
+  padding: 10px;
+  border-radius: 0.4rem;
+}
